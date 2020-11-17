@@ -2,20 +2,16 @@ package com.company;
 
 public class Main {
 
-
     public static void main(String[] args) {
         Board board = new Board();
 
-        board.randomStart();
+        //board.randomStart();
         System.out.println("  ---- unsolved sudoku ----");
-        board.visaBrada();
+        board.printBoard();
 
         System.out.println("  ----- solved sudoku -----");
         board.solve(board.getBoard());
 
-        board.visaBrada();
-
+        board.printBoard();
     }
-
-
 }
